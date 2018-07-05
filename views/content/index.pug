@@ -1,0 +1,15 @@
+extends ../layouts/master
+
+append styles
+  link(href='/vendor/three.css', rel='stylesheet')
+
+block header
+  include ../includes/header
+
+block content
+  main
+    h1= title
+    p Welcome to #{title}
+
+append scripts
+  script(src='/vendor/three.js')
